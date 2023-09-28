@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lakhshadweep-Trip-Planning</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/jpg" href="../assets/Blog-post/ficon.png"/>
+
+    <!-- Maps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../css/all.css" />
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="../css/aos.css" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../css/trip.css" />
+
+  </head>
+
+  
+  <body>
+    
+    <!-- ----------------------------  Navigation ----------------------------------- -->
+    <nav class="nav">
+      
+      <div class="nav-menu flex-row">
+        <div style="display: table;" class="nav-brand">
+          <a style="text-align: center; display: table-cell; vertical-align: middle;" href="../Index.html">
+            Incredible <b><span style="color: blue">!</span></b>ndia
+          </a>
+        </div>
+        <div class="toggle-collapse">
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="move">
+          <ul class="nav-items" text-align:center>
+            <li class="nav-link">
+              <a href="../Index.html">Home</a>
+            </li>
+            <li class="nav-link d1">
+              <a href="./trip.html">Trip Planning</a>
+              <div class="dropdown-content">
+                <a href="./packages.html">Tour Packages</a>
+                <a href="./trip.html#booking">How to Book?</a>
+                <a href="./trip.html#climate">Climate</a>
+                <a href="./trip.html#reach">How to Reach?</a>
+                <a href="./trip.html#season">Tourist Season</a>
+                <a href="./trip.html#boarding">Boarding & Lodging</a>
+                <a href="./trip.html#agents">Travel Agents</a>
+              </div>
+            </li>
+            <li class="nav-link d1">
+              <a href="./culture.html">Culture</a>
+              <div class="dropdown-content">
+                <a href="./culture.html#facts">Basic Facts</a>
+                <a href="./culture.html#lang">Language & Custom</a>
+                <a href="./culture.html#do">Do's & Don'ts</a>
+                <a href="./culture.html#folk">Folk Arts</a>
+              </div>
+            </li>
+            <li class="nav-link d1">
+              <a href="./activities.html">Attractions</a>
+              <div class="dropdown-content">
+                <a href="./activities.html#surfing">Surfing</a>
+                <a href="./activities.html#fishing">Fishing</a>
+                <a href="./activities.html#scuba">Scuba Diving</a>
+                <a href="./activities.html#boating">Boating</a>
+                <a href="./activities.html#focal">Tourist Focal Islands</a>
+              </div>
+            </li>
+            <li class="nav-link d1">
+              <a href="./notices.html">Notices</a>
+              <div class="dropdown-content">
+                <a href="./notices.html#brochures">Brochures</a>
+                <a href="./notices.html#notices">General Notices</a>
+                <a href="./notices.html#tender">Tender Notices</a>
+              </div>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">About Us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="social text-gray">
+          <div class="inicons">
+            <a href="https://www.facebook.com/laksports.reservation/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/lakshadweeptourism/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/laksports" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+            
+    </nav>
+
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+      <!-- --------------------- Trip Carousel -------------------->
+      <section>
+        <div class="blog">
+          <div class  >
+            <div class="blog-content" data-aos="fade-right" data-aos-delay="200" >
+              <div class="blog-title" ID="p">
+                <h2 style="margin: 0; font-size: 2.5rem;">Plan Your Trip!</h1>
+                <div style="background: #fafafaa5;">
+                  <p style="color: black; padding: 1rem;"> 
+                    Lakshadweep has some of the most bewitchingly beautiful islands in the world
+                    with their crystal-clear waters, sparkling coral reefs and blue lagoons. From
+                    embracing the serene beauty of the islands to diving into its captivating and
+                    tranquil waters. <br><br> Relaxing on secluded beaches or indulging in the never-ending
+                    line-up of rejuvenating activities. Lakshadweep is a break from the rush of life
+                    and just the perfect destination for you. Here is a guide to plan your trip in the
+                    best way possible so that you have the most memorable time with us.
+                  </p>
+                </div> 
+              </div>
+            </div>
+          </div>
+          
+              <div class="blog-content" data-aos="fade-right" data-aos-delay="200" >
+                <div id="booking" class="bg1 bg" >
+                <div class="blog-title" id="b">
+                  <h1 class="in1">How to Book?</h1>
+                  <img src="../assets/activities/booking.jpg" width="100%" alt="post-1" />
+                  <div class="outer">
+                   <p class="in1" style="overflow-x:auto;">
+                          1. Choose your package - Tour Package details are available in our website.
+                          <br> 2. Confirm Availability - By e-mail  (laksports.reservation@gmail.com) or by phone (+91 484 2666789, +91 484 2668387) (e-mails will be answered within 48 hours).
+                          <br> 3. Fill up the application form and forward to information and booking section (laksports.reservation@gmail.com).
+                          <br> 4. Remit tour package cost as advised by information and booking section - by online transfer/demand draft/at par cheque.   
+                    </p>
+                  </div>
+                  <div class="container">
+                    <div style="padding-top: 4rem" class="owl-1 owl-carousel owl-theme blog-post">
+                      <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                        <img src="../assets/boarding/Samudram.jpg" alt="post-1" />
+                        <div class="size blog-title">
+                          <h3>Lakshadweep Samudram</h3>
+                          <ul>  
+                            <li>Duration : 5 day Cruise</li>  
+                            <li>Places Covered : Islands of Kavaratti, Kalpeni and Kadmat.</li>  
+                            <li>Cost : Rs.30,500/- per adult and Rs.22,000/- per child.</li>   
+                           </ul>
+                          <a href="../html/packages.html#p1"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                         
+                        </div>
+                      </div>
+                      <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                        <img src="../assets/boarding/swaying_palm.jpg" alt="post-2" />
+                        <div class="size blog-title">
+                          <h3>Swaying Palm Package</h3>
+                          <ul>  
+                            <li>Duration : 2-6 days</li>  
+                            <li>Places Covered : Minicoy Island</li>  
+                            <li>Cost : Rs.9,000/- for Double AC Deluxe, Rs.6,000/- for Single AC Deluxe, Rs.4,000/- per extra person</li>   
+                           </ul>
+                          <a href="../html/packages.html#p2"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                      <div
+                        class="blog-content"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      >
+                        <img src="../assets/boarding/kadmat_island.jpg" alt="post-3" />
+                        <div class="size blog-title">
+                          <h3>Kadmat Island Resort</h3>
+                          <ul>  
+                            <li>Duration : 4 -7 days</li>  
+                            <li>Places Covered : Kadmat Island</li>  
+                            <li>Cost : Rs.11,000/- for Double AC Super Deluxe, Rs.8,000/- for Single AC Super Deluxe, Rs.5,000/- per extra person</li>   
+                           </ul>
+                          <a href="../html/packages.html#p3"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                      <div
+                        class="blog-content"
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
+                        <img src="../assets/boarding/kavaratti.jpg" alt="post-4" />
+                        <div class="size blog-title">
+                          <h3>Kavaratti Island Resort</h3>
+                          <ul>  
+                            <li>Duration : 4-5 days stay</li>  
+                            <li>Places Covered : Kavaratti Island</li>  
+                            <li>Cost : Rs.8,500/- for Double AC Suite, Rs.5,000/- for Single AC Suite, Rs.3,000/- for extra bed</li>   
+                           </ul>
+                          <a href="../html/packages.html#p4"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                      <div
+                        class="blog-content"
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
+                        <img src="../assets/boarding/silver_1.jpg" alt="post-5" />
+                        <div class="size blog-title">
+                          <h3>Silver Sand/One Island Tourist Package</h3>
+                          <ul>  
+                            <li>Duration : 1 day excursion</li>  
+                            <li>Places Covered : One Island tour to Kalpeni, Minicoy, Kavaratti & Kadmat</li>  
+                            <li>Cost : Rs.8,000/- per adult and Rs.7,000/- per child.</li>   
+                           </ul>
+                          <a href="../html/packages.html#p5"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                      <div
+                        class="blog-content"
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
+                        <img src="../assets/boarding/tent.jpg" alt="post-6" />
+                        <div class="size blog-title">
+                          <h3>Tents In Thinnakara</h3>
+                          <ul>  
+                            <li>Duration : 1+ days</li>  
+                            <li>Places Covered : Thinnakara Island</li>  
+                            <li>Cost : Rs.10,000/- for Double Room, Rs.8,000/- for Single Room, Rs.4,000/- per extra person</li>   
+                           </ul>
+                          <a href="../html/packages.html#p6"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                      <div
+                        class="blog-content"
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
+                        <img src="../assets/boarding/bangaram.jpg" alt="post-7" />
+                        <div class="size blog-title">
+                          <h3>Cottages In Bangaram</h3>
+                          <ul>  
+                            <li>Duration : 1+ days</li>  
+                            <li>Places Covered : Bangaram Island</li>  
+                            <li>Cost : Rs.8,000/- for Double Room, Rs.7,000/- for Single Room, Rs.2,000/- per extra person</li>  
+                           </ul>
+                          <a href="../html/packages.html#p7"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                      <div
+                        class="blog-content"
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
+                        <img src="../assets/boarding/scuba.jpg" alt="post-8" />
+                        <div class="size blog-title">
+                          <h3>Scuba Dive Package</h3>
+                          <ul>  
+                            <li>Duration : 5-8 days</li>  
+                            <li>Diving Centers : Islands of Kavaratti, Kalpeni, Kadmat, Bangaram and Thinnakara.</li>  
+                            <li>Cost : Rs.20,000/- and Rs.5,000/- per day for accomodation.</li>   
+                           </ul>
+                          <a href="../html/packages.html#p8"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="owl-navigation">
+                      <span class="owl-nav-prev">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                      </span>
+                      <span class="owl-nav-next">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div> 
+                </div> 
+                </div>
+              </div>
+              <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                <div id="climate" class="bg2 bg" >
+                <div class="blog-title" id="c">
+                  <h1 class="in1">Climate</h1>
+                  <img src="../assets/activities/climate.jpg" width="100%" alt="post-1" />
+                  <div class="outer">
+                    <p class="in1">Lakshadweep enjoys a pleasant tropical climate with summer temperatures ranging from 22° C to 33° C and winter temperatures from 20° C to 32° C. Southwest monsoons from June to September bring plenty of rainfall to the islands. Months from October to may are pleasant with slight rise in temperature during March and April.<br><br>Light cotton tropical clothes are ideal throughout the year. A rain coat will come in handy during the monsoons. Cool sea breeze and abundant shade provided by the canopy of coconut palms make the climate pleasant even during peak summer.</p>
+                  </div> 
+                </div>
+              </div>
+              </div>
+              <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                <div id="reach" class="bg3 bg" >
+                <div class="blog-title" id="r">
+                  <h1 class="in1">How to Reach?</h1>
+                  <img src="../assets/activities/reach.jpg" width="100%" alt="post-1" />
+                  <div class="outer">
+                    <p class="in1"><b>By Air :</b><br><br>Agatti and Bangaram islands can be reached by flight from Kochi. Indian Airlines operate flights from Kochi. Onward flights from Kochi are available to most of the airports in India and abroad. Airstrip is there in Agatti island only. From Agatti boats are available to Kavaratti and Kadmat during fair season October to May. The flight from Cochin to Agatti takes approximately one hour and thirty minutes.</p>
+                    <p class="in1"><b>By Water :</b><br><br>Six passenger ships - MV Kavaratti, MV Arabian Sea, MV Lakshadweep Sea, MV Lagoons and MV Corals operate between Cochin and Lakshadweep. The passage takes 14 to 18 hours depending on island chosen for journey. The ships offer different classes of accommodation: A/C First Class with two berth cabins, A/C Secound Class with four berth cabins. A doctor is available on call on board.</p>
+                  </div> 
+                </div>
+              </div>
+              </div>
+              <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                <div id="season" class="bg4 bg" >
+                <div class="blog-title" id="t">
+                  <h1 class="in1">Tourist Season</h1>
+                  <img src="../assets/activities/ts.jpg" width="100%" alt="post-1" />
+                  <div class="outer">
+                    <p class="in1">The best time to visit Lakshadweep is from October to mid May. From mid May to September it is rainy. Though all the resorts in Lakshadweep are open throughout the year, reaching there by ship is difficult during monsoon. Islands like Agatti and Bangaram are pleasant even during the monsoon and can be reached by flight form Kochi. Reaching resort like Kadmat, Minicoy and Kavaratti is difficult as they are not connected by flight or helicopter.<br><br> During monsoons, transport from Agatti to Bangaram is only by helicopter. Nevertheless the rainy season presents a breathtaking experience when the vegetation looks greener than ever and the veil of rain adds a different hue to the beauty of lagoons and the blue seas beyond. Although flights operate through out the year for the tourists, ships operates for local passengers only and are not available for tourist transport during monsoon.</p>
+                  </div> 
+                </div>
+              </div>
+              </div>
+              <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                <div id="boarding" class="bg5 bg" >
+                <div class="blog-title" id="bo">
+                  <h1 class="in1">Boarding & Lodging</h1>
+                  <img src="../assets/activities/boarding.jpg" width="100%" alt="post-1" />
+                  <div class="outer1" style="padding: 0;">
+                    <p class="in1">SPORTS provide comfortable A/C & Non A/C accommodation in the islands and onboard the ships. The tourist cottages in the islands are clean and well maintained. For certain packages like Samudram, overnight accommodation is provided on board the ship. 
+                      <br><br>The tourists cottages in the islands are built on the beach front and provide a breath taking lagoon view. Food provided is hygienic and wholesome. During day visits to islands, food is served ashore. While catering to all the comforts of the tourists, intrusive ultra modern gadgets have been avoided by design to provide a really exclusive get away feeling.
+                      <br><br> Here are some Hotels and must visit Restaurants and in Lakshadweep for you to check out! 
+                    </p>
+                    <div class="outer" style="background:0;">
+                    <div class="w">
+                      <div class="container1">
+                          <img src="https://cdn.discordapp.com/attachments/817374427674312717/909412725023723610/ezgif-3-72b7a1f9f04e.jpg" style="width:100%; ">
+                          <div class="content1">
+                            <h2 style="margin: 0.5rem;"> <a target="_blank" href="https://www.tripadvisor.com/Hotels-g297640-Lakshadweep-Hotels.html" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')"> Click here to view Hotels in Lakshadweep! </a></h2>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w">
+                      <div class="container1">
+                          <img src="https://cdn.discordapp.com/attachments/817374427674312717/909410217412935690/laskshdweepfood3.jpg" style="width:100%;">
+                          <div class="content1">
+                            <h2 style="margin: 0.5rem;"> <a target="_blank" href="https://www.justdial.com/Lakshadweep/Restaurants/nct-10408936" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')"> Click here to view Restaurants in Lakshadweep  ! </a></h2>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    
+                  </div> 
+                  
+              </div>
+              </div>
+             
+              <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                <div id="agents" class="bg6 bg" >
+                <div class="blog-title" id="tr">
+                  <h1 class="in1">Travel Agents</h1>
+                  <img src="../assets/activities/agent.jpg" width="100%" alt="post-1" />
+                  <div class="outer1" style="overflow-x:auto;">
+                    <table>
+                      <thead>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone No. (s)</th>
+                        <th>Email Id (s)</th>
+                      </thead>
+                      <tr>
+                        <td>M/s Agnihotri Hotel & Impex Pvt.Ltd.</td>
+                        <td>L-101.Dua Complex,1st Floor,
+                          24, Veer Savarkar Block,
+                          Shakarpur,Vikas Marg,Delhi-110092</td>
+                        <td>Land Line: 01122424144 <br>
+                          Mob:09871724144</td>
+                        <td>director@indiatourbyheart.com</td>
+                      </tr>
+                      <tr>
+                        <td>M/s Ankur Tour & Travels Pvt. Ltd.</td>
+                        <td>11 Jessore Road,
+                          2 1/2 No. Airport Gate,
+                          Kolkata- 700 081</td>
+                        <td>9836613131 <br> 9836950501</td>
+                        <td>info@ankurkolkata.com</td>
+                      </tr>
+                      <tr>
+                        <td>M/s.ATT Holidays</td>
+                        <td>Peppermint Sadan
+                          M.G.Road, Ravipuram
+                          MG Road Ravipuram Jn.
+                          Kochi-682 016</td>
+                        <td>+91 484 3014444 <br>
+                          +91 9446002685 <br> +91 9496002013
+                        </td>
+                        <td>cochin@attholidays.com <br> tourscok@attholidays.com</td>
+                      </tr>
+                      <tr>
+                        <td>M/s Blue Lagoon Holidays Cruises Pvt. Limited</td>
+                        <td>XI/260 House No.32,
+                          2nd Avenue Alappat Nagar
+                          Kakkanad, Cochin-682 030.</td>
+                        <td>(0484) 2429150, <br>(0484) 2668407 <br>
+                          9447015565
+                        </td>
+                        <td>mail@bluelagoonholidays.net</td>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <td>M/s Clipper Holidays</td>
+                          <td>Hamd Building,
+                            2nd Floor,No.12/3
+                            Alexandra Street
+                            Richmond Town, Bangalore-560 025
+                            (Behind Frank Anthony Junior School)</td>
+                          <td>080 22229834/35,<br>080 41123480, <br>9632204141<br>
+                          </td>
+                          <td>ranjanabraham@clipperholidays.co.in
+                            <br>ibt1@clipperholidays.co.in,
+                            <br>clippervgs@clipperholidays.co.in
+                          </td>
+                        </tr>
+                        <tr>
+                          <tr>
+                            <td>M/s.Comfort Holidays Pvt. Ltd</td>
+                            <td>XI/260 House No.32,
+                              2nd Avenue Alappat Nagar
+                              Kakkanad, Cochin-682 030.</td>
+                            <td>(0484) 2429150, <br>(0484) 2668407 <br>
+                              9447015565
+                            </td>
+                            <td>mail@bluelagoonholidays.net</td>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <td>M/s.Diamond Leisure Holidays</td>
+                              <td>30, Jadunath Dey Road ,
+                                (Opp. India Airlines House),5th Floor,
+                                Kolkata-700 012,</td>
+                              <td>+91-33-22120114 <br>+91-8420052401 <br>
+                                +91-9830479038
+                              </td>
+                              <td>mail@bluelagoonholidays.net</td>
+                            </tr>
+                            <tr>
+                              <tr>
+                                <td>M/s. Dolphin Travels</td>
+                                <td>26/2AShashi Bhusan Dey Street
+                                  Kolkata- 700012</td>
+                                <td>2227-8968 <br>2246-1801 <br>
+                                  2227-0412
+                                </td>
+                                <td>mail@bluelagoonholidays.net</td>
+                              </tr>
+                              <tr>
+                                <tr>
+                                  <td>M/s. Extreme Holidays</td>
+                                  <td>1st Floor, St. Peters Enclave,
+                                    Opp. Kairali Apartment,
+                                    Panampilly Nagar,
+                                    Kochi-682036</td>
+                                  <td>9847483961 <br>0484-4066597 
+                                  </td>
+                                  <td>serin@extremeholidays.in</td>
+                                </tr>
+                                <tr>
+                                  <tr>
+                                    <td>M/s Flyzone Ventures</td>
+                                    <td>41/2770, D.No.205,
+                                      Sulthan Chambers,
+                                      Paramara Road,
+                                      Kochi-682018</td>
+                                    <td>0484 2397668 <br>9446590303 
+                                    </td>
+                                    <td>flyzoneventures@gmail.com</td>
+                                  </tr>
+                                  <tr>
+
+                    </table>
+                  </div> 
+                </div>
+              </div>
+              </div>
+            </div>
+
+          
+          </div>
+        </div>
+      </section>
+
+       <!---------------x------- Activities Carousel ------------x------->
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+
+      <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+          <h2>About us</h2>
+          <p>
+            Promoting eco-friendly tourism and recreational activities in the
+            islands in association with and under guidance of the Lakshadweep
+            Administration.
+          </p>
+        </div>
+        <div id="contactus" class="newsletter" data-aos="fade-right" data-aos-delay="200">
+          <h2>Contact Us</h2>
+          <p>Tel no: <a style="color: var(--text-light); text-decoration: underline;" href="tel:9495984001" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">+91 9495984001</a></p>
+          <p>Email: <a style="color: var(--text-light); text-decoration: underline;" href="mailto:laksports.reservation@gmail.com" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">laksports.reservation@gmail.com</a></p>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+          <h2>Gallery</h2>
+          <div class="flex-row">
+            <img id="i1" src="../assets/instagram/thumb-card3.png" alt="insta1" onclick="window.open(i1.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i2" src="../assets/instagram/thumb-card4.png" alt="insta2" onclick="window.open(i2.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i3" src="../assets/instagram/thumb-card5.png" alt="insta3" onclick="window.open(i3.src)" onmouseover="" style="cursor:pointer;"/>
+          </div>
+          <div class="flex-row">
+            <img id="i4" src="../assets/instagram/thumb-card6.png" alt="insta4" onclick="window.open(i4.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i5" src="../assets/instagram/thumb-card7.png" alt="insta5" onclick="window.open(i5.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i6" src="../assets/instagram/thumb-card8.png" alt="insta6" onclick="window.open(i6.src)" onmouseover="" style="cursor:pointer;"/>
+          </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+          <h2>More</h2>
+          <p>Find us on</p>
+          <div>
+            <a href="https://www.facebook.com/laksports.reservation/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/lakshadweeptourism/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/laksports" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p><a style="font-family: var(--Lexend); color: var(--text-light);" href=./sitemap.html><u>View Site Map</u></a></p>
+        </div>
+      </div>
+
+      <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+      </div>
+
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="../js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="../js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="../js/main.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../js/main copy.js"></script>
+
+  </body>
+</html>

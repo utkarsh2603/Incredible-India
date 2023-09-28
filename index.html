@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lakhshadweep-Home</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/jpg" href="./assets/Blog-post/ficon.png"/>
+
+    <!-- Maps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css" />
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css" />
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css" />
+
+    <!-- Map styling -->
+    <style>
+      #map{
+        border-style: double;
+        height: 700px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+      }
+      .map-contain{
+        display: block;
+        text-align: center;
+        position: relative;
+        width: 100%;          
+      }
+  </style>
+
+  </head>
+
+  <body>
+    
+    <!-- ----------------------------  Navigation ----------------------------------- -->
+    <nav class="nav">
+      
+      <div class="nav-menu flex-row">
+        <div style="display: table;" class="nav-brand">
+          <a style="text-align: center; display: table-cell; vertical-align: middle;" href="../Index.html">
+            Incredible <b><span style="color: blue">!</span></b>ndia
+          </a>
+        </div>
+        <div class="toggle-collapse">
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="move">
+          <ul class="nav-items" text-align:center>
+            <li class="nav-link">
+              <a href="Index.html">Home</a>
+            </li>
+            <li class="nav-link d1">
+              <a href="./html/trip.html">Trip Planning</a>
+              <div class="dropdown-content">
+                <a href="./html/packages.html">Tour Packages</a>
+                <a href="./html/trip.html#booking">How to Book?</a>
+                <a href="./html/trip.html#climate">Climate</a>
+                <a href="./html/trip.html#reach">How to Reach?</a>
+                <a href="./html/trip.html#season">Tourist Season</a>
+                <a href="./html/trip.html#boarding">Boarding & Lodging</a>
+                <a href="./html/trip.html#agents">Travel Agents</a>
+              </div>
+            </li>
+            <li class="nav-link d1">
+              <a href="./html/culture.html">Culture</a>
+              <div class="dropdown-content">
+                <a href="./html/culture.html#facts">Basic Facts</a>
+                <a href="./html/culture.html#lang">Language & Custom</a>
+                <a href="./html/culture.html#do">Do's & Don'ts</a>
+                <a href="./html/culture.html#folk">Folk Arts</a>
+              </div>
+            </li>
+            <li class="nav-link d1">
+              <a href="./html/activities.html">Attractions</a>
+              <div class="dropdown-content">
+                <a href="./html/activities.html#surfing">Surfing</a>
+                <a href="./html/activities.html#fishing">Fishing</a>
+                <a href="./html/activities.html#scuba">Scuba Diving</a>
+                <a href="./html/activities.html#boating">Boating</a>
+                <a href="./html/activities.html#foc">Tourist Focal Islands</a>
+              </div>
+            </li>
+            <li class="nav-link d1">
+              <a href="./html/notices.html">Notices</a>
+              <div class="dropdown-content">
+                <a href="./html/notices.html#brochures">Brochures</a>
+                <a href="./html/notices.html#notices">General Notices</a>
+                <a href="./html/notices.html#tender">Tender Notices</a>
+              </div>
+            </li>
+            <li class="nav-link">
+              <a href="./html/about.html">About Us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="social text-gray">
+          <div class="inicons">
+            <a href="https://www.facebook.com/laksports.reservation/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/lakshadweeptourism/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/laksports" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+            
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+      <!------------------------ Site Title ---------------------->
+      
+      <section class="site-title">
+        <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+          <h2 style="text-shadow: 2px 2px black">
+            <i>Welcome to Incredible India Tourism</i>
+          </h2>
+          <h1 style="text-shadow: 2px 2px black">
+            Make the most out of your holiday.
+          </h1>
+          <!-- <button class="btn">Explore</button> -->
+        </div>
+      </section>
+
+      <!------------x----------- Site Title ----------x----------->
+
+      <!-- --------------------- Activities Carousel -------------------->
+      <section>
+        <div class="blog">
+          <div class="container" id="Attractions" >
+            <p class="headin" >Attractions</p>
+            <p class="p">
+              If an escapade is what you're looking for, these activities have got you covered.
+              Be it diving into the marine world or just soaking in its beauty from afar, these
+              activities will surely prove to be one great experience for you filled with
+              adventure and fun. Explore the crystal-clear blue waters of Lakshadweep with
+              these water sports!
+            </p>
+          </div>
+          <div class="container">
+            <div style="padding-top: 2rem" class="owl-1 owl-carousel owl-theme blog-post">
+              <div class="blog-content" data-aos="fade-right"  data-aos-delay="200" >
+                <img src="./assets/Blog-post/post-1.jpg" alt="post-1" />
+                <div class="blog-title">
+                  <h3>Surfing</h3>
+                  <a href="./html/activities.html#surfing"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                 
+                </div>
+              </div>
+              <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                <img src="./assets/Blog-post/post-5.png" alt="post-1" />
+                <div class="blog-title">
+                  <h3>Fishing</h3>
+                  <a href="./html/activities.html#fishing"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                  
+                </div>
+              </div>
+              <div
+                class="blog-content"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <img src="./assets/Blog-post/post-3.jpg" alt="post-1" />
+                <div class="blog-title">
+                  <h3>Scuba Diving</h3>
+                  <a href="./html/activities.html#scuba"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                  
+                </div>
+              </div>
+              <div
+                class="blog-content"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                <img src="./assets/Blog-post/post-2.jpg" alt="post-1" />
+                <div class="blog-title">
+                  <h3>Boating</h3>
+                  <a href="./html/activities.html#boating"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="owl-navigation">
+              <span class="owl-nav-prev">
+                <i class="fas fa-long-arrow-alt-left"></i>
+              </span>
+              <span class="owl-nav-next">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!---------------x------- Activities Carousel ------------x------->
+      
+      <!--------------------------Interactive Map------------------------------->
+      
+      <div class="blog-1">
+      <div class="container" id="Explore"><p class="headin">Explore Lakshadweep</p>
+        <p class="p">
+          Be it sunbathing on the warm sand beaches or exploring the gleaming waters,
+          Lakshadweep is the place for you. Here is a small map of the various islands
+          with their locations so that you get to make the most out of your holiday with
+          us! Click on the pins for a glance of the various scenic islands.
+        </p>
+      <br>
+          <div class="map-contain">
+            <div id="map"></div>
+        </div>
+      </div>
+      </div>
+
+      <!---------------x----------Interactive Map--------x---------------------->    
+        
+      <!-- --------------------- Notices  ----------------- -->
+      
+      <section>
+        <div class="blog">
+          <div class="container" id="notices">
+            <p class="headin">Notices</p>
+          </div>
+          <div class="container">
+            <div class="owl-2 owl-carousel owl-theme blog-post">
+              <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                <img src="./assets/Blog-post/bro.jpg" alt="post-1" />
+                <div class="blog-title">
+                  <!-- <h3>Brochures</h3> -->
+                  <a href="./html/notices.html#brochures"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                </div>
+              </div>
+              <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                <img src="./assets/Blog-post/no.jpg" alt="post-1" />
+                <div class="blog-title">
+                  <!-- <h3>Notices</h3> -->
+                  <a href="./html/notices.html#notices"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                </div>
+              </div>
+              <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                <img src="./assets/Blog-post/ten.jpg" alt="post-1" />
+                <div class="blog-title">
+                  <!-- <h3>Tender Notices</h3> -->
+                  <a href="./html/notices.html#tender"><button class="btn btn-blog">Know More&nbsp;&nbsp;<i class="col fas fa-angle-double-right"></i></button></a>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+
+      <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+          <h2>About us</h2>
+          <p>
+            Promoting eco-friendly tourism and recreational activities in the
+            islands in association with and under guidance of the Lakshadweep
+            Administration.
+          </p>
+        </div>
+        <div id="contactus" class="newsletter" data-aos="fade-right" data-aos-delay="200">
+          <h2>Contact Us</h2>
+          <p>Tel no: <a style="color: var(--text-light); text-decoration: underline;" href="tel:7088800700" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">+91 7088800700</a></p>
+          <p>Email: <a style="color: var(--text-light); text-decoration: underline;" href="mailto:utkarsh.kumar2020@vitbhopal.ac.in" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">utkarsh.kumar2020@vitbhopal.ac.in</a></p>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+          <h2>Gallery</h2>
+          <div class="flex-row">
+            <img id="i1" src="./assets/instagram/thumb-card3.png" alt="insta1" onclick="window.open(i1.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i2" src="./assets/instagram/thumb-card4.png" alt="insta2" onclick="window.open(i2.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i3" src="./assets/instagram/thumb-card5.png" alt="insta3" onclick="window.open(i3.src)" onmouseover="" style="cursor:pointer;"/>
+          </div>
+          <div class="flex-row">
+            <img id="i4" src="./assets/instagram/thumb-card6.png" alt="insta4" onclick="window.open(i4.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i5" src="./assets/instagram/thumb-card7.png" alt="insta5" onclick="window.open(i5.src)" onmouseover="" style="cursor:pointer;"/>
+            <img id="i6" src="./assets/instagram/thumb-card8.png" alt="insta6" onclick="window.open(i6.src)" onmouseover="" style="cursor:pointer;"/>
+          </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+          <h2>More</h2>
+          <p>Find us on</p>
+          <div>
+            <a href="https://www.facebook.com/laksports.reservation/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/lakshadweeptourism/" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/laksports" target="_blank" onclick="return confirm('You are going to exit lakshadweep-tourism.herokuapp.com.\r\nClick OK to proceed or Cancel to continue.')">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p><a style="font-family: var(--Lexend); color: var(--text-light);" href=./html/sitemap.html><u>View Site Map</u></a></p>
+        </div>
+      </div>
+
+      <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+      </div>
+
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./js/main copy.js"></script>
+
+  </body>
+</html>
